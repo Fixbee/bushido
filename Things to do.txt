@@ -1,0 +1,8 @@
+add pacifico style to all headings 
+add an ad popup using js
+do something with join us link
+optimise the photo gallery or configure that on another page
+re-align the more buttons
+make photos clickable and viewable 
+develop a cookie
+finish all external html pages 
