@@ -5,4 +5,4 @@ optimise the photo gallery or configure that on another page
 re-align the more buttons
 make photos clickable and viewable 
 develop a cookie
-finish all external html pages 
+develop a jss slider for meet the learders part 
