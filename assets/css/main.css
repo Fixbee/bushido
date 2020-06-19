@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Pacifico";
+/* Primary bg-color : #CC5226 */
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1465,18 +1467,18 @@
 		}
 
 	a {
-		color: #e28630;
+		color: #CC5226;
 		text-decoration: none;
 	}
 
-		a:hover {
-			text-decoration: none;
-		}
+	a:hover {
+		text-decoration: none;
+	}
 
 
-		em i {
-			font-style: italic !important;
-		}
+	em i {
+		font-style: italic !important;
+	}
 	h1, h2, h3, h4, h5, h6 {
 		color: #727a82;
 		font-weight: 700;
@@ -1544,39 +1546,6 @@
 	}
 
 /* Form */
-
-	.select-wrapper {
-		text-decoration: none;
-		display: block;
-		position: relative;
-	}
-
-		.select-wrapper:before {
-			content: "";
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		.select-wrapper:before {
-			color: #dee1e3;
-			display: block;
-			height: 2.75em;
-			line-height: 2.75em;
-			pointer-events: none;
-			position: absolute;
-			right: 0;
-			text-align: center;
-			top: 0;
-			width: 2.75em;
-		}
-
-		.select-wrapper select::-ms-expand {
-			display: none;
-		}
 
 /* Box */
 
@@ -1668,7 +1637,6 @@
 /* List */
 
 	ul {
-		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
@@ -1831,7 +1799,8 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #f6755e;
+		/* background-color: #f6755e; */
+		background-color: #3D4041;
 		border-radius: 4px;
 		border: 0;
 		color: #ffffff;
@@ -1852,7 +1821,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #f78a76;
+			background-color: #CC5226;
 		}
 
 		input[type="submit"]:active,
@@ -1860,7 +1829,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: #f56046;
+			background-color: #CC5226;
 		}
 
 		@media screen and (max-width: 480px) {
@@ -1942,14 +1911,18 @@
 	.wrapper {
 		padding: 6em 0 4em 0;
 	}
+		.wrapper h1.banner-text {
+			text-align: center;
+			font-family: 'Poppins', cursive, sans-serif;
+		}
 
 		.wrapper h1.banner-text::before {
 			content: '';
 			position: absolute;
 			background: orangered;
 			height: 2px;
-			width: 150px;
-			margin: 50px 0 5px 5px;
+			width: 180px;
+			margin: 40px 0 5px 10px;
 			padding-bottom: 3px;
 		}
 
@@ -1960,7 +1933,7 @@
 		}
 
 		.wrapper.style1 {
-			background: #f6755e;
+			background: #CC5226;
 			color: #fcdcd6;
 		}
 
@@ -2015,8 +1988,8 @@
 	}
 
 		#header .logo {
-			color: rgb(211, 93, 38);
-			background-image: linear-gradient(to right, #aa540e, #c28f22 );
+			/* color: rgb(211, 93, 38); */
+			background-image: linear-gradient(to right, #c26b23, #c28f22 );
 			background-clip: text;
 			color: transparent;
 			-webkit-background-clip: text;
@@ -2062,7 +2035,8 @@
 			}
 
 			#header nav .register-button::before{
-				background: #F49820; 
+				background: rgb(195,107,34);
+				background: linear-gradient(0deg, rgba(195,107,34,1) 0%, rgba(253,187,45,1) 100%); 
 				content: '';
 				position: absolute;
 				right: -50%;
@@ -2166,7 +2140,8 @@
 		-ms-transition: -ms-transform 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: rgb(196, 81, 24);
+		background: rgb(195,107,34);
+		background: linear-gradient(0deg, rgba(195,107,34,1) 0%, #EC5D10 100%);
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -2231,7 +2206,7 @@
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: transparent;
 			border: 0;
-			color: #a7d9e7;
+			color: #ffffff;
 			cursor: pointer;
 			display: block;
 			height: 3.25em;
@@ -2330,6 +2305,7 @@
 		#banner p {
 			font-size: 1.25em;
 			margin-bottom: 1.75em;
+			color: #bbbbbb;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -2502,18 +2478,19 @@
 	/*counter up section*/
 			.counterup-area {
 				background: rgb(44, 44, 44);
-				/* background: linear-gradient(90deg, rgba(236,92,14,1) 0%, rgba(237,169,139,1) 100%);testing purpose */
+				/* background: rgb(195,107,34); */
+				background: linear-gradient(0deg, rgba(195,107,34,1) 0%, #EC5D10 100%)
 			}
 			.counterup-area h3{
 				font-family: 'poppins', cursive, sans-serif;
 				padding-top: 30px;
-				color: #E5432D;
+				color: #acacac;
 				text-align: center;
 				font-size: 2em;
 			}
 			.counterup-area p {
 				font-family: 'poppins', cursive, sans-serif;
-				color: #E5432D;
+				color: #acacac;
 				text-align: center;
 			}
 			.counter-content-holder {
@@ -2527,7 +2504,7 @@
 				margin:-2px;
 			}
 			.counterup-content{
-				background: rgb(44, 44, 44);
+				background: transparent;
 				cursor:pointer;
 				text-align: center;
 				margin:20px;
