@@ -2477,7 +2477,7 @@
 
 	/*counter up section*/
 			.counterup-area {
-				background: #333;
+				background: rgb(19, 19, 19);
 			}
 			.counterup-area h3{
 				font-family: 'poppins', cursive, sans-serif;
