@@ -2477,9 +2477,7 @@
 
 	/*counter up section*/
 			.counterup-area {
-				background: rgb(44, 44, 44);
-				/* background: rgb(195,107,34); */
-				background: linear-gradient(0deg, rgba(195,107,34,1) 0%, #EC5D10 100%)
+				background: #333;
 			}
 			.counterup-area h3{
 				font-family: 'poppins', cursive, sans-serif;
@@ -2511,19 +2509,27 @@
 				transition: .4s;
 			}
 			.counterup-content p{
+				z-index: 1;
 				font-family: 'poppins', cursive, sans-serif;
-				opacity: .5;
-				font-size: 50px;
-				font-weight: 500;
-				margin:10px 0px;
-				color: #919394;
+				font-size: 130px;
+				font-weight: 800;
+				background: rgb(255,255,255);
+				background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(0, 0, 0) 85%);
+				background-clip: text;
+				color: transparent;
+				-webkit-background-clip: text;
+				-webkit-text-fill-mode: transparent;
+				display: inline-block;
 			}
 			.counterup-content h2{
+				display: block;
 				font-family: 'poppins', cursive, sans-serif;
 				font-size: 24px;
 				text-transform: uppercase;
-				font-weight: 500;
+				font-weight: 900;
 				color: #E5432D;
+				margin-top: -90px !important;
+				z-index: 10;
 			}
 
 			/*Responsive CSS*/ /*Note: if you use bootstrap then don't need the css just use bootstrap grid*/
@@ -2540,12 +2546,17 @@
 				.single-counterup{
 					width:50%;
 				}
-
+				.counterup-content h2 {
+					margin-top: -20px;
+				}
 			}
 			/* small mobile :320px. */
 			@media only screen and (max-width: 479px) {
 				.single-counterup{
 					width:100%;
+				}
+				.counterup-content h2 {
+					margin-top: -20px;
 				}
 			}
 
@@ -2945,9 +2956,11 @@ section {
 }
 
 @media screen and (max-width:481px) and (min-width: 0px) {
-section {
+section.leaders {
 	overflow: hidden;
 	background: #fff;
+	max-width: 80%;
+	margin: 0 auto;
 }
 
 .heading {
