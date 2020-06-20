@@ -2780,8 +2780,10 @@ section {
     font-size: 12px;
     font-style: italic;
     text-align: center;
-    color: #333;
+	color: #333;
+	padding: 15px 0px;
 }
+
 .card .btn {
 	text-decoration: none;
     padding: 10px 30px;
@@ -2875,13 +2877,25 @@ section {
     }
 }
 
-@media screen and (min-width:767px) {
-	.about {
+@media screen and (min-width:828px) {
+	.about span {
+		color: #fff;
+	}
+	.about.sha span {
 		display: none;
 	}
 }
 
-@media screen and (max-width:767px) and (min-width: 480px) {
+@media screen and (min-width:767px) {
+	.about span {
+		color: #fff;
+	}
+	.about.man span {
+		display: none;
+	}
+}
+
+@media screen and (max-width:767px) and (min-width: 481px) {
 .card {
 	width: 75%;
 }
@@ -2930,7 +2944,7 @@ section {
 }
 }
 
-@media screen and (max-width:480px) and (min-width: 0px) {
+@media screen and (max-width:481px) and (min-width: 0px) {
 section {
 	overflow: hidden;
 	background: #fff;
