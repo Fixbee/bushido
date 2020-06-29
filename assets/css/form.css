@@ -1,3 +1,19 @@
-form {
-    overflow-x: hidden !important;
+header {
+    height: 10vh;
+}
+.main-part {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/2-min.jpeg');
+    background-position: center top;
+    background-size: cover;
+}
+.main-text p{
+    position: relative;
+    font-family: 'poppins', sans-serif;
+    top: 20%;
+}
+
+
+.sub-btn {
+    background: #cc5226 !important;
+    text-align: center;
 }

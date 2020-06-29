@@ -8,13 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--custom css-->
     <link rel="stylesheet" href="assets/css/main.min.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="./assets/css/form.css"> -->
+    <link rel="stylesheet" href="./assets/css/form.css">
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/logo.png" type="image/png">
     <!--Bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!--CSS Animations-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -59,90 +61,98 @@
     </nav>
 
     <!-- Form section -->
-    <form class="needs-validation container" novalidate>
-        <div class="form-row">
-            <div class="col-md-4 mb-3">
-                <label for="validationTooltip01">First name</label>
-                <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" 
-                    required>
-                <div class="valid-tooltip">
-                    Looks good!
+    <div class="main-part">
+        <h2 class="text-center">We Welcome you to our Family</h2>
+        <p class="container font-weight-bold">Please fill the form to complete the Registration process.</p>
+        <form class="needs-validation container form text-white" novalidate>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip01">First name</label>
+                    <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Last name</label>
+                    <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationTooltip02">Last name</label>
-                <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name"
-                    required>
-                <div class="valid-tooltip">
-                    Looks good!
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" placeholder="example@xyz.com" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Date of birth</label>
+                    <input type="text" class="form-control" id="validationTooltip02" placeholder="" required>
+                    <small id="emailHelp" class="form-text text-muted">choose your date of birth</small>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" placeholder="example@xyz.com" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-            </div>
-        </div>
 
-        <div class="form-row">
-            <div class="col-md-4 mb-3">
-                <label for="validationTooltip01">Father's name</label>
-                <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" required>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip01">Father's name</label>
+                    <input type="text" class="form-control" id="validationTooltip01" placeholder="" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Mother's name</label>
+                    <input type="text" class="form-control" id="validationTooltip02" placeholder="" required>
+                </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationTooltip02">Mother's name</label>
-                <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" required>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationTooltip02">Local Guardian</label>
-                <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" required>
-            </div>
-        </div>
 
-        <div class="form-row">
-            <div class="col-md-4 mb-3">
-                <label for="validationTooltip01">Phone 1</label>
-                <input type="text" class="form-control" id="validationTooltip01" placeholder="+91 1234567890" required>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationTooltip02">Phone 2</label>
-                <input type="text" class="form-control" id="validationTooltip02" placeholder="will add datepicker here" required>
-                <small id="emailHelp" class="form-text text-muted">*optional | or will add age picking here</small>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationTooltip02">Will add gender picking here</label>
-                <input type="text" class="form-control" id="validationTooltip02" placeholder="will add gender pick here" required>
-            </div>
-        </div>
-    
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="validationTooltip03">City</label>
-                <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
-                <div class="invalid-tooltip">
-                    Please provide a valid city.
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Local Guardian</label>
+                    <input type="text" class="form-control" id="validationTooltip02" placeholder="" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip01">Phone 1</label>
+                    <input type="text" class="form-control" id="validationTooltip01" placeholder="+91 1234567890" required>
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationTooltip04">State</label>
-                <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
-                <div class="invalid-tooltip">
-                    Please provide a valid state.
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationTooltip05">Pincode:</label>
-                <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
-                <div class="invalid-tooltip">
-                    Please provide a valid Pin.
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-secondary" type="submit">Submit form</button>
-    </form>
 
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Choose your gender</label>
+                    <input type="text" class="form-control" id="validationTooltip02" placeholder="" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip03">City</label>
+                    <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid city.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip04">State</label>
+                    <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid state.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip05">Pincode:</label>
+                    <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid Pin.
+                    </div>
+                </div>
+            </div>
+            <button class=" sub-btn text-white mx-auto" type="submit">Submit</button>
+        </form>
+    </div>
 
     <!-- Footer -->
     <footer class="footer" id="contact">
