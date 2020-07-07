@@ -1,10 +1,9 @@
-header {
-    height: 10vh;
-}
 .main-part {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/2-min.jpeg');
-    background-position: center top;
+    /* background: #00153A; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cutewallpaper.org/21/karate-wallpaper/Kyokushin-Karate-Full-HD-Wallpapers-Wallpaper-Cave.jpg');
+    background-attachment: fixed;
     background-size: cover;
+    z-index: 10;
 }
 .main-text p{
     position: relative;
@@ -12,8 +11,25 @@ header {
     top: 20%;
 }
 
-
-.sub-btn {
+.hero-well img{
+    display: none;
+}
+#sub-btn {
     background: #cc5226 !important;
-    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.mid-space {
+    padding: 0 10em;
+}
+
+@media screen and (max-width:768px) {
+    #header .logo {
+        margin-left: 1em;
+    }
+    
+    .hero-well img {
+        visibility: visible;
+    }
 }
