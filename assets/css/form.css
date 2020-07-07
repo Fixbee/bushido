@@ -2,7 +2,8 @@
     /* background: #00153A; */
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cutewallpaper.org/21/karate-wallpaper/Kyokushin-Karate-Full-HD-Wallpapers-Wallpaper-Cave.jpg');
     background-attachment: fixed;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
     z-index: 10;
 }
 .main-text p{
