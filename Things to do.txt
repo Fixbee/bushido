@@ -1,8 +1,8 @@
 add pacifico style to all headings 
 add an ad popup using js
-do something with join us link
-optimise the photo gallery or configure that on another page
-re-align the more buttons
+do something with join us link -- done
+optimise the photo gallery or configure that on another page -- done
+re-align the more buttons -- done
 make photos clickable and viewable 
 develop a cookie
-develop a jss slider for meet the learders part 
+develop a jss slider for meet the learders part -- done
