@@ -1815,9 +1815,9 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		/* background-color: #f6755e; */
-		background-color: #3D4041;
-		border-radius: 4px;
+		background-color: #272727;
+    	border-radius: 15px;; 
+		/*background-color: #3D4041;*/
 		border: 0;
 		color: #ffffff;
 		cursor: pointer;
@@ -1943,8 +1943,8 @@
 		}
 
 		.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5 {
-			/* color: #25a2c3; */
-			color: #f6755e;
+			 color: #b7ab17; 
+			/*color: #f6755e;*/
 			font-family: 'poppins', cursive, sans-serif;
 		}
 
@@ -1990,7 +1990,8 @@
 		align-items: center;
 		/* background: #fff; */
 		background: rgb(14,13,13);
-		background: linear-gradient(90deg, rgba(14,13,13,1) 0%, rgba(28,5,5,1) 35%);
+		/*background: linear-gradient(90deg, rgba(14,13,13,1) 0%, rgba(28,5,5,1) 35%);*/
+		background: linear-gradient(90deg, rgb(29, 29, 28) 20%, rgb(47, 47, 47) 85%);
 		cursor: default;
 		height: 6em;
 		left: 0;
@@ -2005,7 +2006,8 @@
 
 		#header .logo {
 			/* color: rgb(211, 93, 38); */
-			background-image: linear-gradient(to right, #c26b23, #c28f22 );
+			/*background-image: linear-gradient(to right, #c26b23, #c28f22 );*/
+			background-image: linear-gradient(to left, #ffd501, #c30909 );
 			background-clip: text;
 			color: transparent;
 			-webkit-background-clip: text;
@@ -2157,7 +2159,8 @@
 		transition: transform 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
 		background: rgb(195,107,34);
-		background: linear-gradient(0deg, rgba(195,107,34,1) 0%, #EC5D10 100%);
+		/*background: linear-gradient(0deg, rgba(195,107,34,1) 0%, #EC5D10 100%);*/
+		background: linear-gradient(0deg, rgb(25, 11, 0) 0%, #212120 100%);
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -2300,8 +2303,10 @@
 /* Banner */
 
 	#banner {
+		height: auto;
 		padding: 16em 0 18em 0;
-		background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../images/rsz_land1.jpg);
+		background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../images/1.jpg);
+		clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
 		background-size: cover;
 		background-position:center;
 		background-repeat: no-repeat;
@@ -2381,14 +2386,6 @@
 					font-size: .9em;
 				}
 
-		}
-
-		body.is-loading #banner .content {
-			opacity: 0;
-			-moz-transform: translateY(1em);
-			-webkit-transform: translateY(1em);
-			-ms-transform: translateY(1em);
-			transform: translateY(1em);
 		}
 
 /* Main */
@@ -2500,7 +2497,7 @@
 			.counterup-area h3{
 				font-family: 'poppins', cursive, sans-serif;
 				padding-top: 30px;
-				color: #acacac;
+				color: #b7ab17;
 				text-align: center;
 				font-size: 2em;
 			}
@@ -2547,7 +2544,7 @@
 				font-size: 24px;
 				text-transform: uppercase;
 				font-weight: 900;
-				color: #E5432D;
+				color: #b7ab17;
 				margin-top: -90px !important;
 				z-index: 10;
 			}
@@ -2873,7 +2870,7 @@
 }
 
 .center .content .fas:hover {
-    background: orangered;
+    background: rgb(255, 196, 0);
 }
 
 .center .content .text {
