@@ -2142,6 +2142,10 @@
 
 		#header {
 			min-width: 320px;
+			min-height: 10vh;
+		}
+		#header .left, #header .logo {
+			margin-top:5px ;
 		}
 
 	}
@@ -2303,38 +2307,95 @@
 /* Banner */
 
 	#banner {
-		height: auto;
-		padding: 16em 0 18em 0;
+		height: 95vh;
+		padding: 16em 0 10em 0;
 		background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../images/1.jpg);
 		clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
 		background-size: cover;
-		background-position:center;
+		background-position:center top;
 		background-repeat: no-repeat;
 		text-align: center;
 	}
 
-		#banner .content {
-			display: block;
-			-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.75s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
-			transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
-			opacity: 1;
-			margin-top: -5em;
-		}
+	.main-logo img {
+		position: absolute;
+		width: 130px;
+		height: 130px;
+		top: 110px;
+		right: 20px;
+	}
 
-		#banner p {
-			font-size: 1.25em;
-			margin-bottom: 1.75em;
-			color: #bbbbbb;
-		}
+	.banner-text-main, .banner-text-sub {
+		font-weight: 200;
+		margin-left: 5%; /*less than 8px */
+		text-align: left;
+		font-family: 'poppins', sans-serif;
+	}
 
-		@media screen and (max-width: 1280px) {
+	.banner-text-main {
+		font-size: 3.5rem;
+		color: #aaa;
+	}
+
+	.banner-text-sub {
+		font-style: italic;
+		font-size: .8rem;
+		font-weight: 100;
+		color: #aaa;
+		margin-top: -3%;
+	}
+
+	.banner-text-main span {
+		font-family: 'Arvo', serif;
+		color: #b7ab17;
+	}
+
+	.banner-reg-btn {
+		font-size: 22px;
+		padding: 18px 50px;
+		margin-bottom: 10px;
+		border-radius: 10px 0 10px 0;
+		background: #212120;
+		color: #b7ab17;
+		transition: all .4s ease;
+	}
+
+	.banner-reg-btn:hover {
+		background-color: #dd3d03;
+		color: #fff;
+	}
+
+
+	@media screen and (max-width:1920px) {
+		.main-logo {
+			top: 110px;
+			left: 20px;
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
 
 			#banner {
 				padding: 12em 0 10em 0;
 			}
-
+			.main-logo img {
+				position: absolute;
+				width: 130px;
+				height: 130px;
+				top: 110px;
+				right: 20px;
+			}
+			.banner-text-sub {
+				padding-bottom: 30px;
+			}
+			.banner-reg-btn {
+				font-size: 17px;
+				padding: 10px 25px;
+				margin-bottom: 10px;
+				border-radius: 10px 0 10px 0;
+				background: #212120;
+				color: #b7ab17;
+			}
 		}
 
 		@media screen and (max-width: 980px) {
@@ -2342,15 +2403,31 @@
 			#banner {
 				padding: 8em 6em 6em 6em;
 			}
-
-				#banner br {
-					display: none;
-				}
-
-				#banner h1 {
-					font-size: 2.25em;
-				}
-
+			.main-logo img {
+				width: 130px;
+				height: 130px;
+				position: absolute;
+				top: 70px;
+				right: 10px;
+			}
+			.banner-text-main {
+				font-size: 40px;
+				margin-top:30px ;
+				padding-bottom: 20px;
+			}
+			.banner-text-sub {
+				text-align: center;
+				font-size: 15px;
+				padding-bottom: 20px;
+			}
+			.banner-reg-btn {
+				font-size: 17px;
+				padding: 10px 25px;
+				margin-bottom: 10px;
+				border-radius: 10px 0 10px 0;
+				background: #212120;
+				color: #b7ab17;
+			}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -2358,33 +2435,61 @@
 			#banner {
 				padding: 6em 4em 4em 4em;
 			}
-			#banner .content img {
-				margin-top: 15px;
+			.main-logo img {
 				width: 100px;
 				height: 100px;
+				position: absolute;
+				top: 70px;
+				right: 20px;
 			}
-			#banner .actions {
-				display: none;
+			.banner-text-main {
+				font-size: 25px;
+				margin-top:15px ;
+			}
+			.banner-text-sub {
+				text-align: center;
+				font-size: 15px;
+			}
+			.banner-reg-btn {
+				font-size: 13px;
+				padding: 10px 25px;
+				margin-bottom: 10px;
+				border-radius: 10px 0 0 0;
+				background: #212120;
+				color: #b7ab17;
+				margin-bottom: 20px;
 			}
 		}
 
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				padding: 4em 2em 2em 2em;
+				padding: 4em 2em 3em 2em;
 			}
-
-				#banner h1 {
-					font-size: 2em;
-				}
-
-				#banner p {
-					font-size: 1em;
-				}
-
-				#banner .button {
-					font-size: .9em;
-				}
+			.main-logo img {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				top: 60px;
+				right: 0px;
+			}
+			.banner-text-main {
+				font-size: 18px;
+				margin-top:26px ;
+			}
+			.banner-text-sub {
+				text-align: center;
+				font-size: 12px;
+			}
+			.banner-reg-btn {
+				font-size: 13px;
+				padding: 10px 25px;
+				margin-bottom: 10px;
+				border-radius: 10px 0 0 0;
+				background: #212120;
+				color: #b7ab17;
+				margin-bottom: 20px;
+			}
 
 		}
 
